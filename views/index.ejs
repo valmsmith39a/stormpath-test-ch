@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head >
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/bower_components/angular/angular.min.js"></script>  
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="/bower_components/stormpath-sdk-angularjs/dist/stormpath-sdk-angularjs.min.js"></script>
+    <script src="/bower_components/stormpath-sdk-angularjs/dist/stormpath-sdk-angularjs.tpls.min.js"></script>
+    <script src="javascripts/module.js"></script>
+    <script src="javascripts/controllers.js"></script>
+  </head>
+  <body ng-app='stormPathApp'>
+    <h3>I've died and gone to sneaker HEAVEN</h3>
+    <h1 id='title-main'>pumped up kicks</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQLS7WLM1DJkmkzClk5MU8pRIoTD8MX27RQWCmr3BCBsa2c3C" id='title-image'alt="">
+    <button ui-sref='home'>HOME</button>
+    <button ui-sref='register'>REGISTER</button>
+    <button ui-sref='login'>LOGIN</button>
+    <ui-view></ui-view>
+  </body>
+</html>
